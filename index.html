@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Tempo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Biblioteca SweetAlert2 (API visual de alertas) -->
+</head>
+<body>
+    
+    
+    <div class="card">
+        <div class="box-title">
+    <h1 class="title">
+        Previsão do tempo   
+    </h1>
+        <header class="box-input">
+            <input type="text" id="input-city" placeholder="Digite o nome da cidade!" >
+            <button id="button-searching" class="button">Buscar</button>
+        </header>
+
+        <p id="message_error" hidden></p>
+        <div id="info" class="style-info hidden">
+            <h2 id="city-name">--</h2>
+            <div id="temperature-city">
+                <span id="value-temperature">--</span>ºC 
+            </div>
+            <p id="condition" class="condition">--</p>
+        </div>
+        <div class="details-grid">
+        <div class="detail-item">
+          <span>Umidade</span>
+          <strong id="humidity-value">--%</strong>
+        </div>
+        <div class="detail-item">
+          <span>Vento</span>
+          <strong id="wind-value">-- km/h</strong>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
