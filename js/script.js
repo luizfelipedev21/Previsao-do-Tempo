@@ -104,4 +104,10 @@ search_button.addEventListener('click', () => {
     });
 
     }
+   
 })
+ input_city.addEventListener('keypress', () =>{
+        if(event.key === "Enter"){
+            search_button.click()
+        }
+    })
